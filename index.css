@@ -1,5 +1,5 @@
 #nav{
-    float: left;
+    display: block;
     position: absolute;
     margin: 0;
     top: 0;
@@ -12,8 +12,8 @@
     background-image: url('./images/IMG_20170520_173847.jpg');
 }
 #nav a{
-    display: block;
-    float: left;
+   
+    float:left;
     color: inherit;
     text-decoration: none;
     width: 120px;
@@ -21,7 +21,7 @@
 }
 #nav a:hover{
     color: black;
-    background-color: grey;
+    background-color: azure;
 }
 body{
     background-image: url('./images/20190326_152548.jpg');
@@ -29,6 +29,14 @@ body{
     overflow-x: hidden;
     overflow-y: visible;
     background-color: grey;
+}
+footer{
+    bottom:0;
+    position: absolute;
+    background-color: gold;
+    width: 100%;
+    left:0;
+    height: 100px;
 }
 /*@media only screen and (max-width:300px) and (max-height:400px){
     body{
