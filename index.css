@@ -19,6 +19,7 @@
     text-decoration: none;/*removes the underline feature on the links*/
     width: 120px;
     padding: 16px 14px;
+    font-family: 'Satisfy', cursive;
 }
 /*style the nav links on hover*/
 #nav a:hover{
