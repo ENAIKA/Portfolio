@@ -2,21 +2,23 @@
 #### Website resume, 08/02/2020
 #### By E Naika
 ## Description
-{This is a detailed description of your application, including its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }
+This is website about me, including my skills, education backgrond and the stuff I like. 
 ## Setup/Installation Requirements
+* Browser
 * Install git
 * clone the repository to the directory of your choice
 * create gh-pages branch
-* Browser
 * visit the link created
 ## Technologies Used
 HTML for the pages layout and customized css for styling.
-## Support and contact details
-{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}
-### License
-*MIT License
 
-Copyright (c) [2020] [E Naika]
+#URL
+
+
+### License
+* MIT License 
+
+Copyright (c) [2020] [E NAIKA](https://github.com/ENAIKA)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
