@@ -1,7 +1,6 @@
 /* place the navbar at the top*/
 #nav{
     display: block;
-    position: absolute;
     margin: 0;
     top: 0;
     left: 0;
@@ -10,7 +9,7 @@
     font-size: xx-large;
     color:white;
     overflow: auto;
-    background-image: url('./images/road.jpg');
+    background-image: url('./images/sky6.jpeg');
 }
 /*style the nav a links*/
 #nav a{
@@ -33,6 +32,7 @@ body{
     overflow-x: hidden;
     overflow-y: visible;
     background-color: grey;
+    position: relative;
 }
 footer{
     bottom:0;
@@ -60,8 +60,8 @@ img{
 }
 .main #Professional{
     margin-top: 100px;
-    width: inherit;/*inherit from parent main*/
-    height:300px;
+    width:inherit;/*inherit from parent main*/
+    height:365px;
 /*    
     -webkit-animation:spin 4s linear infinite;
 -moz-animation:spin 4s linear infinite;
@@ -97,6 +97,7 @@ animation:spin 4s linear infinite; */
 }
 #summary strong{
     animation:blinkingText 1.3s infinite;
+    animation-delay: 2s;
     
 }
 
