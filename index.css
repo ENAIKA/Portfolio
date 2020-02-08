@@ -10,7 +10,7 @@
     font-size: xx-large;
     color:white;
     overflow: hidden;
-    background-image: url('./images/20190326_152548.jpg');
+    background-image: url('./images/road.jpg');
 }
 /*style the links*/
 #nav a{
@@ -84,15 +84,19 @@ animation:spin 4s linear infinite; */
     float:right;
     width: 260px;
     top:0;
-    font-family: 'Jim Nightshade', cursive;
+    font-family: 'Srisakdi', cursive;
     box-sizing: border-box;
-    border: 2px solid mediumseagreen;
+    border: 2px dotted mediumseagreen;
     padding: 2px;
     font-size: large;
-    background-color: white;
+    
 }
 #summary:hover{
-    background-color: thistle;
+    background-color: rgb(218, 171, 218);
+}
+#summary strong{
+    animation:blinkingText 1.2s infinite;
+    color:blueviolet;
 }
 #about h1{
     font-family: 'Bungee Shade', cursive;/*google font*/
@@ -134,6 +138,31 @@ animation:spin 4s linear infinite; */
         float: left;
     }
 }
-/* google fonts
-font-family: 'Srisakdi', cursive;
-*/
+
+#welcome {
+    display: inline-flex;
+    justify-content: center;
+    font-family: 'Jim Nightshade', cursive;/*google font*/
+    animation: rotation 4s infinite linear;
+    margin-top: 45px;
+   
+  }
+  
+  @keyframes rotation {
+    50% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+    
+
+@keyframes blinkingText{
+    0%{     color: #000; }
+    49%{    color: #000; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #000;    }
+}
