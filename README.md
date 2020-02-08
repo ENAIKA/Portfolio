@@ -4,21 +4,26 @@
 ## Description
 This is website about me, including my skills, education backgrond and the stuff I like. 
 ## Setup/Installation Requirements
-* Browser
-* Install git
-* clone the repository to the directory of your choice
-* create gh-pages branch
-* visit the link created
+*Install gitand configure it.
+#### To Contribute
+Follow this steps:
+* Fork the repo
+* Create your branch '''git branch bracnh-name'''
+* Make the appropriate changes in the files
+* Add changes to reflect the changes made ~~~git add .~~~
+* Commit your changes 
+* Push to the branch 
+* Create a Pull Request.
 ## Technologies Used
-HTML for the pages layout and customized css for styling.
-
+* HTML for page layouts
+* Customazed CSS for styling.
 #URL
 
 
 ### License
-* MIT License 
+* [MIT License]
 
-Copyright ©[2020] [E NAIKA](https://github.com/ENAIKA)
+Copyright © [E NAIKA](https://github.com/ENAIKA)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
