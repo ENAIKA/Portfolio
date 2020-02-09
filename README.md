@@ -2,9 +2,9 @@
 #### Naika portfolio, 08/02/2020
 #### By E Naika
 ## Description
-This is a website about me, including my skills, education backgrond and experience. 
+This is a website about me, including my skills and experience. 
 ## Setup/Installation Requirements
-*Install git and configure it.
+* Install git and configure it.
 #### To Contribute
 Follow this steps:
 * Fork the repo
@@ -17,8 +17,8 @@ Follow this steps:
 ## Technologies Used
 * HTML for page layouts
 * Custom-made CSS for styling.
-#URL
-
+# URL
+* https://enaika.github.io/Portfolio/
 
 ### License
 * MIT License
