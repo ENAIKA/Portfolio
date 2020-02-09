@@ -1,29 +1,29 @@
-# MyPortfolio
-#### Website resume, 08/02/2020
+# My Portfolio
+#### Naika portfolio, 08/02/2020
 #### By E Naika
 ## Description
-This is website about me, including my skills, education backgrond and the stuff I like. 
+This is a website about me, including my skills, education backgrond and experience. 
 ## Setup/Installation Requirements
-*Install gitand configure it.
+*Install git and configure it.
 #### To Contribute
 Follow this steps:
 * Fork the repo
-* Create your branch '''git branch bracnh-name'''
+* Create your branch 
 * Make the appropriate changes in the files
-* Add changes to reflect the changes made ~~~git add .~~~
+* Add changes to reflect the changes made 
 * Commit your changes 
 * Push to the branch 
 * Create a Pull Request.
 ## Technologies Used
 * HTML for page layouts
-* Customazed CSS for styling.
+* Custom-made CSS for styling.
 #URL
 
 
 ### License
-* [MIT License]
+* MIT License
 
-Copyright © [E NAIKA](https://github.com/ENAIKA)
+* Copyright © [E NAIKA](https://github.com/ENAIKA)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
