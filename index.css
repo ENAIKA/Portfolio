@@ -8,8 +8,10 @@
     line-height:20px;
     font-size: xx-large;
     color:white;
-    overflow: auto;
+    overflow: hidden;
     background-image: url('./images/sky6.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 /*style the nav a links*/
 #nav a{
@@ -25,6 +27,10 @@
 #nav a:hover{
     color: black;
     background-color: azure;
+    border-bottom: 3px solid red;
+}
+#nav a:active{
+    border-bottom: 3px solid red; 
 }
 body{
     background-image: url('./images/20190326_152548.jpg');
@@ -33,18 +39,21 @@ body{
     overflow-y: visible;
     background-color: grey;
     position: relative;
+    width: 100%;
+    height: 200%;
 }
-footer{
+.footer{
     bottom:0;
     position: fixed;
-    background-color: gold;
-    width: 100%;
+    background-color: white;
     left:0;
-    height:75px;
-    
+    height:80px;
+    width: 100%;   
 }
+
+
 /*making the image sticky*/
-img{
+#summary img{
     float: right;
     width:255px;
     padding-right: 0;
@@ -62,18 +71,7 @@ img{
     margin-top: 100px;
     width:inherit;/*inherit from parent main*/
     height:365px;
-/*    
-    -webkit-animation:spin 4s linear infinite;
--moz-animation:spin 4s linear infinite;
-animation:spin 4s linear infinite; */
-    
 }
-
-
-/* 
-@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
-@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } } */
 .main #Professional:hover{
     background-color: blueviolet;
 }
@@ -124,20 +122,20 @@ animation:spin 4s linear infinite; */
 .main #Skills:hover{
     background-color: rgba(95, 165, 95, 0.233);
 }
-@media screen and (max-width:300px){
+@media screen and (max-width:500px){
     body{
         background-color: mediumslateblue;
-        background-image: url('./images/IMG_20170520_173847.jpg');
-    }
-    img{
-        float:left;
-        position: relative;
+        float: none;
+        display: block;
+        text-align: left;
     }
     nav{
-        background-image: url('./images/20181210_094302.jpg');
+        display: inline;
+        overflow: hidden;
     }
     nav a{
-        font-size: medium;
+        display: block;
+        font-size: small;
         float: left;
     }
 }
@@ -148,10 +146,75 @@ animation:spin 4s linear infinite; */
     margin-top: 100px;
     font-family: 'Jim Nightshade', cursive;/*google font*/
     animation: rotation 4s infinite linear;
-   
-   
+    text-decoration: underline;
+    font-size: xx-large; 
+    color: rgb(35, 124, 35);
   }
-  
+  .opacity {
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    width: 100%;
+  }
+  .opacity #press{
+      text-align: right;
+  }
+  /* Firefox old*/
+@-moz-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+} 
+
+@-webkit-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+/* IE */
+@-ms-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+} 
+/* Opera and prob css3 final iteration */
+@keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+} 
+.blinking {
+    -moz-animation: blink normal 2s infinite ease-in-out; /* Firefox */
+    -webkit-animation: blink normal 2s infinite ease-in-out; /* Webkit */
+    -ms-animation: blink normal 2s infinite ease-in-out; /* IE */
+    animation: blink normal 2s infinite ease-in-out; /* Opera and prob css3 final iteration */
+}
+/*for welcome text at homepage*/
   @keyframes rotation {
     50% {
       transform: rotate(360deg);
@@ -160,9 +223,7 @@ animation:spin 4s linear infinite; */
       transform: rotate(0deg);
     }
   }
-
-    
-
+/*strong tags in div summary*/
 @keyframes blinkingText{
     0%{     color: #000; }
     49%{    color: #000; }
@@ -170,6 +231,43 @@ animation:spin 4s linear infinite; */
     99%{    color:transparent;  }
     100%{   color: #000;    }
 }
+/*line break in about.html*/
 hr{
     border-top: 1px solid red;
+}
+/* This container is needed to position the front and back side */
+.projects {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the projects container */
+  .projects:hover .Robotalk {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .Robotalk, .RobotalkText {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .Robotalk{
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .RobotalkText{
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
   }
