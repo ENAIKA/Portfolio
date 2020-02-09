@@ -23,7 +23,7 @@ Follow this steps:
 ### License
 * MIT License
 
-* Copyright © [E NAIKA](https://github.com/ENAIKA)
+* Copyright © [E NAIKA](https://github.com/ENAIKA)[2020]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
